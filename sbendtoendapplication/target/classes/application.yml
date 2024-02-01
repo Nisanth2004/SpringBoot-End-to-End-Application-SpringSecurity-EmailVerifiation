@@ -1,0 +1,30 @@
+server:
+  port: 9191
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/nisanth_end_to_end_db
+    username: root
+    password: Sujith@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nisanthselva2004@gmail.com
+    password: erqf ecvr uxlm aser
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  level:
+    org.springframework.web.servlet.handler.HandlerMappingIntrospector: ERROR
+
